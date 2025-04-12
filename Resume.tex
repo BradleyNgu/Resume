@@ -1,0 +1,205 @@
+%-------------------------
+% Resume in Latex
+% Author : Bradley Nguyen
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor} % Added xcolor package for link color customization
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome} % For LinkedIn and GitHub icons
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Set link color
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue % Set URL color to blue
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Bradley Nguyen} \\ \vspace{1pt}
+
+    \small 647-686-9717 $|$ \href{mailto:bradleynguyen2004@gmail.com}{\textcolor{black}{bradleynguyen2004@gmail.com}} $|$ 
+    \faLinkedin\ \href{https://linkedin.com/in/bradley-nguyen-cs}{\textcolor{blue}{LinkedIn}} $|$
+    \faGithub\ \href{https://github.com/bradleyngu}{\textcolor{blue}{GitHub}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carleton University, Bachelor of Computer Science, Honours Program (Co-op)}{Ottawa, ON}
+      {Software Engineering Stream - Major CGPA: 3.7/4.0}{2023 -- 2027}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres, MySQL, SQLite), JavaScript, HTML/CSS, TypeScript, PHP} \\
+     \textbf{Frameworks/Libraries}{: React, Node.js, Express.js, Flask, Tailwind, Vite, MongoDB Atlas, FastAPI} \\
+     \textbf{Developer Tools:} Git, GitHub, OpenCV, MediaPipe, Docker, GitHub Actions, Arduino IDE, Postman, Google Cloud Platform, Microsoft Azure, VSCode, IntelliJ, Eclipse, Linux/Unix, Streamlit, Jira, Excel
+    }}
+ \end{itemize}
+
+ %-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Developer}{May. 2025 -- Present}
+      {dynaCERT Inc.}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Incoming Software Developer for Summer 2025}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {
+        \textbf{Dumpster Diver} \textbar\ \href{https://github.com/BradleyNgu/cuHacking}{GitHub} \textbar\  \textit{Python, JavaScript, TensorFlow, Keras, PHP, SQLite, HTML/CSS}
+        }{Mar. 2025}
+          \resumeItemListStart
+            \resumeItem{\textbf{Challenge Winner at cuHacking 6} earning \textbf{\$300} out of \textbf{300+ participants}}
+            \resumeItem{Built an end-to-end \textbf{automated waste sorting system} using \textbf{TensorFlow}, \textbf{Keras}, and \textbf{OpenCV}, integrated with \textbf{Arduino}-controlled hardware for real-time object detection and actuation}
+            \resumeItem{Designed and implemented a \textbf{SQLite} database to log classification events, store system activity, and support backend queries for live dashboard updates}
+            \resumeItem{Developed a \textbf{Flask}-based web interface with real-time data visualization powered by \textbf{Chart.js}, enabling users to monitor recycling trends and system status}
+            \resumeItem{Engineered a full-stack \textbf{IoT data pipeline}, enabling seamless communication between hardware, ML models, database, and front-end components}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {
+          \textbf{QMove} \textbar\ \href{https://github.com/BradleyNgu/QHacks}{GitHub} \textbar\ \textit{React, MediaPipe, OpenCV, Python, JavaScript, MongoDB, OpenAI API} 
+          }{Jan. 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a \textbf{full-stack physiotherapy tracker} with \textbf{95\% ROM tracking accuracy}, using \textbf{MediaPipe} and \textbf{OpenCV} for real-time motion tracking at \textbf{QHacks 2025}}
+            \resumeItem{Designed a \textbf{modular Python backend} with \textbf{RESTful APIs}, improving \textbf{data processing efficiency by 40\%} and supporting \textbf{AI-driven exercise recommendations} via \textbf{OpenAI’s API}.}
+            \resumeItem{Logged \textbf{1000+ therapy sessions} securely in \textbf{MongoDB} while ensuring \textbf{99.99\% uptime} through cloud deployment with \textbf{CI/CD pipelines}.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {
+          \textbf{Playtopia} \textbar\ \href{https://github.com/xavierdmello/Playtopia}{GitHub} \textbar\ \textit{Starknet, React, Flask, OpenCV, Python, Tailwind, Vite, TypeScript, Cairo} 
+          }{Jan. 2025}
+          \resumeItemListStart
+            \resumeItem{Won \textbf{2nd place} for the \textbf{Best Use of Starknet Challenge} at \textbf{uOttaHack 7}, earning \textbf{\$2,200} out of \textbf{850+ participants} for developing a \textbf{blockchain-based game creation platform}.}
+            \resumeItem{Developed an \textbf{interactive game platform} with \textbf{Starknet smart contracts}, \textbf{React}, and \textbf{Python}, supporting \textbf{1000+ game sessions} and \textbf{100+ user-created levels}.}
+            \resumeItem{Integrated \textbf{OpenCV} for \textbf{real-time ball detection}, improving accuracy by \textbf{20\%} and triggering \textbf{Starknet smart contracts} to reward players with \textbf{STRK tokens}.}
+            \resumeItem{Engineered \textbf{hardware-software integration} with \textbf{Python} for \textbf{game controllers} and \textbf{real-time blockchain updates}, achieving \textbf{100\% accuracy} in tracking game outcomes.}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {
+          \textbf{The Heart Stopper} \textbar\ \href{https://github.com/BradleyNgu/Hack-The-Hill}{GitHub} \textbar\ \textit{Python, OpenCV, MediaPipe, Arduino, Serial Communication} 
+          }{Sep. 2024}
+          \resumeItemListStart
+            \resumeItem{Won \textbf{1st place} for \textbf{Best uOttawa x Carleton Collaboration} at \textbf{Hack the Hill II}, securing \textbf{\$300} out of \textbf{800+ participants} for developing a \textbf{gesture-controlled energy drink dispenser}.}
+            \resumeItem{Optimized \textbf{hand-tracking} using \textbf{OpenCV} and \textbf{MediaPipe}, increasing \textbf{gesture recognition accuracy by 35\%}, processing \textbf{50+ hand positions per second}.}
+            \resumeItem{Implemented \textbf{real-time serial communication} between \textbf{Python} and \textbf{Arduino}, achieving \textbf{100\% reliability} in controlling servo motors for liquid dispensing.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
