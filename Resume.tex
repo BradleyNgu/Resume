@@ -114,13 +114,14 @@
 \begin{document}
 
 %----------HEADING----------
-
 \begin{center}
     \textbf{\Huge \scshape Bradley Nguyen} \\ \vspace{1pt}
 
-    \small 647-686-9717 $|$ \href{mailto:bradleynguyen2004@gmail.com}{\textcolor{black}{bradleynguyen2004@gmail.com}} $|$ 
-    \faLinkedin\ \href{https://linkedin.com/in/bradley-nguyen-cs}{\textcolor{blue}{LinkedIn}} $|$
-    \faGithub\ \href{https://github.com/bradleyngu}{\textcolor{blue}{GitHub}}
+    \small 647-686-9717 $|$ 
+    \href{mailto:bradleynguyen2004@gmail.com}{\textcolor{black}{bradleynguyen2004@gmail.com}} $|$ 
+    \href{https://www.bradleynguyen.co}{\textcolor{blue}{Portfolio}} $|$ 
+    \href{https://www.linkedin.com/in/bradley-nguyen-cs}{\textcolor{blue}{LinkedIn}} $|$
+    \href{https://www.github.com/bradleyngu}{\textcolor{blue}{GitHub}}
 \end{center}
 
 
@@ -128,78 +129,82 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Carleton University, Bachelor of Computer Science, Honours Program (Co-op)}{Ottawa, ON}
-      {Software Engineering Stream - Major CGPA: 3.7/4.0}{2023 -- 2027}
+      {Carleton University, Bachelor of Computer Science (Co-op)}{Ottawa, ON}
+      {Major CGPA: 10.19/12.0}{2023 -- 2027}
+      \vspace{0.2em} 
+      
+      {\textbf{Relevant Coursework:} Abstract Data Types and Algorithms, Object-Oriented Software Engineering, Web Development, Programming Paradigms, Database Management Systems, Operating Systems}
   \resumeSubHeadingListEnd
 
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres, MySQL, SQLite), JavaScript, HTML/CSS, TypeScript, PHP} \\
-     \textbf{Frameworks/Libraries}{: React, Node.js, Express.js, Flask, Tailwind, Vite, MongoDB Atlas, FastAPI} \\
-     \textbf{Developer Tools:} Git, GitHub, OpenCV, MediaPipe, Docker, GitHub Actions, Arduino IDE, Postman, Google Cloud Platform, Microsoft Azure, VSCode, IntelliJ, Eclipse, Linux/Unix, Streamlit, Jira, Excel
-    }}
- \end{itemize}
+
 
  %-----------EXPERIENCE-----------
-\section{Work Experience}
+\section{Experience}
   \resumeSubHeadingListStart
+  \resumeSubheading
+  {Innovation, Science and Economic Development Canada}{May 2026 -- Present}
+  {Data Engineer $|$ Co-op $|$ AWS, Python, Oracle SQL} {Ottawa, ON}
+  \resumeItemListStart
+   \resumeItem{Developed ETL scripts to load, transform, and validate \textbf{3+ source datasets} into staging tables, reducing manual processing by \textbf{40\%} and improving daily data delivery reliability}
+    \resumeItem{Automated SQL and shell-based batch jobs for scheduled data refreshes, improving runtime efficiency by \textbf{25\%}} 
+    \resumeItem{Implemented end-to-end ETL validation and logging on \textbf{EC2-hosted runners and AWS Lambda} to catch load errors and improve release reliability}
+  \resumeItemListEnd
+  \resumeSubheading
+  {Lux Cognitiva Technologies Inc.}{May 2026 -- Present}
+  {Software Engineer $|$ Contract Part-Time $|$ TypeScript, Prisma, PostgreSQL, AWS} {Remote}
+  \resumeItemListStart
+    \resumeItem{Built a \textbf{Health Canada DPD} sync and search API using \textbf{TypeScript}, \textbf{Prisma}, and \textbf{PostgreSQL}, with migrations, Zod validation, and integration tests}
+    \resumeItem{Developed scheduling APIs with \textbf{6 Prisma models}, \textbf{6 routes}, RBAC/audit enforcement, and backend test coverage for visit workflow logic}
+  \resumeItemListEnd
     \resumeSubheading
-      {Software Developer}{May. 2025 -- Present}
-      {dynaCERT Inc.}{Toronto, ON}
-      \resumeItemListStart
-        \resumeItem{Incoming Software Developer for Summer 2025}
-      \resumeItemListEnd
+  {dynaCERT Inc.}{May 2025. -- Dec. 2025}
+  {Full-Stack Developer $|$ Co-op \textbar\ \textit{TypeScript, React, Node.js, Express.js, C++, MySQL, Docker}}{Toronto, ON}
+  \resumeItemListStart
+    \resumeItem{Architected and deployed a \textbf{React/TypeScript} industrial IoT dashboard (\textbf{Node.js + MySQL}), processing real-time telemetry for \textbf{450+ H\textsubscript{2}} generator units}
+    \resumeItem{Built a \textbf{real-time telemetry ETL pipeline} for H\textsubscript{2} generators, parsing \textbf{40+ sensor fields} from \textbf{ZeroMQ streams} into MySQL with validation and error handling.}
+  \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
     \resumeProjectHeading
+  {\textbf{MediaspaceDownloader} $|$ \href{https://github.com/BradleyNgu/mediaspacedownloader}{GitHub} \textbar\       \textit{Python, Playwright, Selenium, FFmpeg}}{Jan. 2026 -- Apr. 2026}
+  \resumeItemListStart
+    \resumeItem{Developed a \textbf{Python video downloader} that extracts \textbf{Kaltura M3U8 links} using \textbf{7 URL patterns}, \textbf{7 HTML regex patterns}, and \textbf{6 API endpoint variations} to handle multiple Mediaspace URL formats}
+    \resumeItem{Implemented \textbf{browser automation} with \textbf{2 frameworks} (Selenium and Playwright) to bypass download restrictions, achieving \textbf{2 minute} capture time}
+  \resumeItemListEnd
+
+    \resumeProjectHeading
         {
-        \textbf{Dumpster Diver} \textbar\ \href{https://github.com/BradleyNgu/cuHacking}{GitHub} \textbar\  \textit{Python, JavaScript, TensorFlow, Keras, PHP, SQLite, HTML/CSS}
+        \textbf{Dumpster Diver} $|$ \href{https://github.com/BradleyNgu/cuHacking}{GitHub} \textbar\  \textit{Python, TensorFlow, Keras, Arduino, SQLite, Flask, PHP}
         }{Mar. 2025}
           \resumeItemListStart
-            \resumeItem{\textbf{Challenge Winner at cuHacking 6} earning \textbf{\$300} out of \textbf{300+ participants}}
-            \resumeItem{Built an end-to-end \textbf{automated waste sorting system} using \textbf{TensorFlow}, \textbf{Keras}, and \textbf{OpenCV}, integrated with \textbf{Arduino}-controlled hardware for real-time object detection and actuation}
-            \resumeItem{Designed and implemented a \textbf{SQLite} database to log classification events, store system activity, and support backend queries for live dashboard updates}
-            \resumeItem{Developed a \textbf{Flask}-based web interface with real-time data visualization powered by \textbf{Chart.js}, enabling users to monitor recycling trends and system status}
-            \resumeItem{Engineered a full-stack \textbf{IoT data pipeline}, enabling seamless communication between hardware, ML models, database, and front-end components}
-          \resumeItemListEnd
-    \resumeProjectHeading
-          {
-          \textbf{QMove} \textbar\ \href{https://github.com/BradleyNgu/QHacks}{GitHub} \textbar\ \textit{React, MediaPipe, OpenCV, Python, JavaScript, MongoDB, OpenAI API} 
-          }{Jan. 2025}
-          \resumeItemListStart
-            \resumeItem{Developed a \textbf{full-stack physiotherapy tracker} with \textbf{95\% ROM tracking accuracy}, using \textbf{MediaPipe} and \textbf{OpenCV} for real-time motion tracking at \textbf{QHacks 2025}}
-            \resumeItem{Designed a \textbf{modular Python backend} with \textbf{RESTful APIs}, improving \textbf{data processing efficiency by 40\%} and supporting \textbf{AI-driven exercise recommendations} via \textbf{OpenAI’s API}.}
-            \resumeItem{Logged \textbf{1000+ therapy sessions} securely in \textbf{MongoDB} while ensuring \textbf{99.99\% uptime} through cloud deployment with \textbf{CI/CD pipelines}.}
-          \resumeItemListEnd
-    \resumeProjectHeading
-          {
-          \textbf{Playtopia} \textbar\ \href{https://github.com/xavierdmello/Playtopia}{GitHub} \textbar\ \textit{Starknet, React, Flask, OpenCV, Python, Tailwind, Vite, TypeScript, Cairo} 
-          }{Jan. 2025}
-          \resumeItemListStart
-            \resumeItem{Won \textbf{2nd place} for the \textbf{Best Use of Starknet Challenge} at \textbf{uOttaHack 7}, earning \textbf{\$2,200} out of \textbf{850+ participants} for developing a \textbf{blockchain-based game creation platform}.}
-            \resumeItem{Developed an \textbf{interactive game platform} with \textbf{Starknet smart contracts}, \textbf{React}, and \textbf{Python}, supporting \textbf{1000+ game sessions} and \textbf{100+ user-created levels}.}
-            \resumeItem{Integrated \textbf{OpenCV} for \textbf{real-time ball detection}, improving accuracy by \textbf{20\%} and triggering \textbf{Starknet smart contracts} to reward players with \textbf{STRK tokens}.}
-            \resumeItem{Engineered \textbf{hardware-software integration} with \textbf{Python} for \textbf{game controllers} and \textbf{real-time blockchain updates}, achieving \textbf{100\% accuracy} in tracking game outcomes.}
-          \resumeItemListEnd
-          \resumeProjectHeading
-          {
-          \textbf{The Heart Stopper} \textbar\ \href{https://github.com/BradleyNgu/Hack-The-Hill}{GitHub} \textbar\ \textit{Python, OpenCV, MediaPipe, Arduino, Serial Communication} 
-          }{Sep. 2024}
-          \resumeItemListStart
-            \resumeItem{Won \textbf{1st place} for \textbf{Best uOttawa x Carleton Collaboration} at \textbf{Hack the Hill II}, securing \textbf{\$300} out of \textbf{800+ participants} for developing a \textbf{gesture-controlled energy drink dispenser}.}
-            \resumeItem{Optimized \textbf{hand-tracking} using \textbf{OpenCV} and \textbf{MediaPipe}, increasing \textbf{gesture recognition accuracy by 35\%}, processing \textbf{50+ hand positions per second}.}
-            \resumeItem{Implemented \textbf{real-time serial communication} between \textbf{Python} and \textbf{Arduino}, achieving \textbf{100\% reliability} in controlling servo motors for liquid dispensing.}
+            \resumeItem{\textbf{Winner} at \textbf{cuHacking 6} (\$300, 300+ participants) for an \textbf{IoT-enabled waste sorting system} using \textbf{TensorFlow CNNs}, \textbf{Flask APIs}, and \textbf{Arduino servos} for automated material classification, processing \textbf{100+ items/min} with \textbf{95\% accuracy}}
+            \resumeItem{Trained \textbf{TensorFlow CNN} for object detection, connected to Arduino servos via Flask API}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
+%-----------EXTRACURRICULAR ACTIVITIES-----------
+\section{Extracurricular Activities}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {cuHacking}{Sep. 2025 --   Jun. 2026}
+      {Hacker Experience Team Lead}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Coordinate and enhance the participant experience for \textbf{300+ hackers} through event planning, workshops, and sponsor engagement initiatives}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, C, Java, SQL (Postgres), JavaScript, TypeScript, HTML/CSS} \\
+     \textbf{Frameworks/Libraries}{: React, Next.js, Node.js, Express.js, Three.js, Flask, Tailwind, Vite, MongoDB, Selenium} \\
+     \textbf{Developer Tools:} {Git, GitHub, Docker, GCP, Linux/Unix, Jira, Vercel, Power BI, Azure, AWS, Playwright, OAuth} \\
+ \end{itemize}
 
 %-------------------------------------------
 \end{document}
